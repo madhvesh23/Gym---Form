@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* css reset */
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(bgimg.jpg);
+            height: 1000px;
+            color: aliceblue;
+            font-family: 'Raleway', sans-serif;
+
+
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 15px;
+            left: 56px;
+
+        }
+
+        .middle {
+            display: block;
+            /* border: 2px solid #074283; */
+            width: 553px;
+            margin: 34px auto;
+            font-weight: bold;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid blueviolet; */
+            position: absolute;
+            top: 51px;
+            right: 81px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+            font-size: 15px;
+
+
+        }
+
+        .navbar li a {
+            color: #71f1f1;
+            text-decoration: none;
+            padding: 3px 21px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: bisque;
+
+        }
+
+        .left img {
+            width: 157px;
+            filter: brightness(91%);
+
+        }
+
+        .left div {
+
+            line-height: normal;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .btn {
+            margin: 0px 10px;
+            color: rgb(57, 24, 220);
+            padding: 0px 5px;
+            border: 2px solid grey;
+            border-radius: 7px;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: rgb(219, 219, 219);
+            color: rgb(0, 0, 59);
+        }
+
+        .container {
+            /* border: 2px solid orange */
+
+            margin: 256px -1px;
+            padding: 26px 54px;
+            width: 516px;
+        }
+
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 332px;
+            padding: 10px;
+            margin: 15px auto;
+            border-radius: 9px;
+            background-color: #08070780;
+        }
+
+
+
+
+        .container h1 {
+            text-align: center;
+            background-color: #55484247;
+            color: #020238;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .container button {
+            display: block;
+            margin: auto;
+            width: 72px;
+            border-radius: 9px;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- left box -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>
+                MADHVESH FITNESS
+            </div>
+
+        </div>
+        <!-- nav bar -->
+        <div class="middle">
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#" class="active">HOME</a> </li>
+                    <li> <a href="#">ABOUT US</a> </li>
+                    <li> <a href="#">FITNESS CALC</a> </li>
+                    <li> <a href="#">CONTACT US</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>
+            Join the best gym of Vadodara now.
+        </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Contaxt Number">
+            </div>
+            <button class="submit">Submit</button>
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
